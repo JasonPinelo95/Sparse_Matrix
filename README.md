@@ -23,6 +23,7 @@ can observe that there is a link between vertices 1 and 2 because A 1,2 = 1.
 In real networks L is much smaller than the maximum number of links in a network. In a network of
 N vertices, the maximum number of links is given by:
 
-![title][images/equation1.png]
-
+<p align="center">
+  <img src="images/equation1.png" />
+</p>
 
