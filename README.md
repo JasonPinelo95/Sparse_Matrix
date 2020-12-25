@@ -27,3 +27,46 @@ N vertices, the maximum number of links is given by:
   <img src="images/equation1.png" />
 </p>
 
+In real networks only a tiny fraction of links in the matrix are nonzero. A matrix which contains very
+few non-zero elements are called **sparse matrix**.
+
+<p align="center">
+  <img src="images/sparse1.jpeg" />
+</p>
+
+<p align="center">
+  <img src="images/sparse2.jpeg" />
+</p>
+
+## Project Description
+
+The program use multi-linked circular linked list to represent sparse matrix. A linked list node
+is going to store the information of a vertex in the sparse matrix. 
+The *node* ***structure*** contain the following information:
+
+* **info**, the information contained in cell of the matrix.
+* **row**, the row where info is stored.
+* **column**, the column where column is stored.
+* **nextRow**, is a pointer to the next node in the same row with relevant information (non-zero).
+* **nextColumn**, is a pointer to the next node in the same column with relevant information (non-zero).
+  
+<p align="center">
+  <img src="images/structure.png" />
+</p>
+
+For example, consider the following matrix: 
+
+<p align="center">
+  <img src="images/matrix1.png" />
+</p>
+
+Using the circular linked list, the previous matrix can be represented as Fig. 4. Observe that an extra
+row and column are included. All element in the extra row has zero in row and in the extra column
+has zero in column. Note that all the cells with zero are not included in the linked list representation
+of sparse matrix.
+
+<p align="center">
+  <img src="images/sparse3.png" />
+</p>
+
+
