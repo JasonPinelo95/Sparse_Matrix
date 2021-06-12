@@ -2,7 +2,7 @@
 
 ## Motivation
 
-A network is composed of system’s components often called nodes or vertices and the direct
+A network is composed of elements often called nodes or vertices and the direct
 interactions between them, called links or edges. Figure 1 shows a small subset of (a) the internet,
 where routers are connected to each other; (b) Hollywood actor network, where two actors are
 connected if they played in the same movie; (c) protein-protein interaction network, where two
